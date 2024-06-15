@@ -55,7 +55,7 @@ public class Recursion {
     // System.out.println(ans);
     // }
 
-    // fabonacci series till nth term
+    /// fabonacci szeries till nth term
     // public static void printfib(int a , int b, int n) {//a is second last and b
     // is last term
     // if(n==0) {
