@@ -166,7 +166,7 @@ class StackClass{
         pushAtBottom(data, s);
         s.push(top);
     }
-    public static void reverse (Stack<Integer> s) {
+    public static void reverse (Stack<Integer>s) {
         if(s.isEmpty()) {
             return;
         }
