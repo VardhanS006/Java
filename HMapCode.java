@@ -26,7 +26,7 @@
 //         }
 
 //         private void rehash() {
-//             LinkedList<Node> oldBucket[] = buckets;  //all busckets stored in old buckets
+//             LinkedList<Node> oldBucket[] = buckets;  //all buckets stored in old buckets
 //             buckets = new LinkedList[n*2]; //empty bucket
 
 //             for(int i =0 ;i<N*2; i++) {//creating empty linked list
@@ -51,7 +51,7 @@
 //             LinkedList<Node> ll = buckets[bi];
 //             int di = 0;
 //             for(int i = 0; i<ll.size(); i++) {
-//                 if (ll.get(i).key.equals(key)) {
+//                 if (ll.get(i).key == (key)) {
 //                     return i; // di
 //                 }
 //             }
@@ -147,7 +147,7 @@
 import java.util.*;
 
 public class HMapCode {
-    static class HashMap<K, V> { // generics
+    static class HashMap<K, V> { // generics //parametrized type (y keys kisi bhi type ki ho sakti)
         private class Node {
             K key;
             V value;
@@ -167,7 +167,7 @@ public class HMapCode {
             this.N = 4;
             this.buckets = new LinkedList[4];
             for (int i = 0; i < 4; i++) {
-                this.buckets[i] = new LinkedList<>();
+                this.buckets[i] = new LinkedList<>();//creating new link list for each bucket
             }
         }
 
